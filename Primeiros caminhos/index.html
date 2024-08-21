@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão de Log</title>
+</head>
+<body>
+    <button id="btnTeste">Clique aqui</button>
+    <script>
+        document.getElementById("btnTeste").addEventListener("click", function() {
+            console.log("Botão foi clicado!");
+            alert("Botão foi clicado! Verifique o console para mais detalhes.");
+        });
+    </script>
+    <br>
+    <input class="addTexto" type="text" placeholder="Escreve aqui (:">
+    <br>
+    <input class="addTexto" type="text" placeholder="Não, escreva aqui">
+</body>
+</html>
+
+<!--
+    //button[@id='btnTeste']
+    (//*[@class='addTexto'])[2]
+-->
